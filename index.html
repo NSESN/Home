@@ -11,20 +11,69 @@
 <body>
     <nav>
         <div class="conatiner navbar">
-        <div class="logo">
-            <a href="">NSESN</a>
+          <div class="logo">
+            <a href="index.html">NSESN</a>
         </div>
+    </div>
         <div class="menu">
             <ul>
-                <li><a href="https://www.google.com/">Home</a></li>
-                <li><a href="#">about</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
                 <li><a href="#">cyclone</a></li>
                 <li><a href="#">all in one</a></li>
                 <li><a href="#">websites</a></li>
-                <li><a href="https://www.youtube.com/@CycloneMan">youtube</a></li>
+                <li><a href="https://www.youtube.com/@CycloneMan">YouTube</a></li>
             </ul>
         </div>
         </div>    
     </nav>
+    <clk>
+    <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="daynum">00</span>
+        <span id="month">Month</span>
+        <span id="year">Year</span>
+        </div>
+       <div class="time">
+        
+        <span id="hour">00</span>:<span id="minutes">00</span>:
+        <span id="seconds">00</span>
+       
+      </div>
+    </clk>
+    <p2>
+        <div class="ex2">
+        heloo hai welcome Home page hello w hai welackome this is nile welcome to my website this is how to show intent spacing
+         </div>
+    </p2>
+
+    <script >
+       
+        let dayname = document.getElementById("dayname");
+        let month = document.getElementById("month");
+        let daynum = document.getElementById("daynum");
+        let year = document.getElementById("year");
+
+    
+       let hour = document.getElementById("hour");
+       let minutes = document.getElementById("minutes");
+       let seconds = document.getElementById("seconds");
+       setInterval(()=>{
+       let currentTime = new Date();
+       
+       console.log(currentTime);
+
+       hour.innerHTML =currentTime.getHours();
+       minutes.innerHTML =currentTime.getMinutes();
+       seconds.innerHTML =currentTime.getSeconds();
+       const months =["January","February","March","April", "May", "June", "July", "August", "September", "October","November","December"];
+       const week= ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
+
+       dayname.innerHTML =week[currentTime.getDay()];
+       month.innerHTML =months[currentTime.getMonth()];
+       year.innerHTML =currentTime.getFullYear();
+       daynum.innerHTML =currentTime.getDate();
+       },1000)
+    </script>
 </body>
 </html>
