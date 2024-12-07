@@ -81,15 +81,16 @@ nav .menu ul li a:hover{
     font-weight: 900;
 }
 /*make it resposive by inspect..founded that <320px */
-@media(max-width:1000px){
+
+  @media(max-width:1000px){
 
     nav .menu ul {
         position: fixed;
         top:80px;
-        left: 0px;
-        background: gold;
+        left:0px;
+        background: rgb(0, 251, 255);
         height:100vh;
-        width: 20vh;
+        width: 30vh;
         display: block;
         text-align: center;
         
@@ -141,16 +142,37 @@ p1 .ex1{
 }
 
 
-@media(max-height:624px){
 
+@media(max-height:768px)
+{
+    nav .menu ul {
+        position: fixed;
+        top:80px;
+        left:0px;
+        background: rgb(255, 0, 102);
+        height:3%;
+        width: 100%;
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+        
+    nav .navbar{
+        display:flex;
+        height: 30px;
+        justify-content: space-between;
+        align-items: center;
+    
+        
+    
+    }
 
     nav .menu ul li a{
+        height: 10px;
         font-size: 15px;
         text-decoration: none;
     }
     nav .menu ul li a:hover{
         padding:10px;
-        background-color: beige;
+        background-color: rgb(245, 220, 220);
         
         outline: none;
         border-radius: 5px;
@@ -158,7 +180,7 @@ p1 .ex1{
     }
     nav .date{
         
-        color: rgb(255, 0, 0);
+          color: rgb(255, 0, 0);
         
         
     }
@@ -176,11 +198,11 @@ p2 .ex2{
     text-indent: 50px;
     margin-left: 10px;
     font-family: 'Times New Roman', Times, serif;
-}
+ }
 p1 .ex1{
     margin-left: 10px;
     
     font-family: 'Times New Roman', Times, serif; 
     
-}
-}
+ }
+} 
