@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        
+      
+    
+}
+
+
+nav{
+
+   text-indent: 40px;
+   height: 80px;
+   background:rgb(255, 242, 0) ;
+   background-image: linear-gradient(to bottom right, rgba(255, 0, 106, 0.242), hsl(69, 100%, 50%));
+   
+
+}
+
+nav .navbar{
+    display:flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    
+
+}
+
+clk .date{
+    position: relative;
+    font-size: small;
+    color: rgb(255, 0, 0);
+    text-align: right;
+    margin-right: 10px;
+    
+}
+clk .time{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    margin-right: 10px;
+
+     
+}
+
+
+
+nav .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(25, 138, 27);
+    font-family: sans-serif;
+    font-weight: 700;
+}
+nav .menu ul {
+    display: flex;
+    
+}
+nav .menu ul li{
+    list-style: none;
+    margin:0 15px;
+    color: rgb(29, 19, 120);
+    font-weight: 800;
+    
+    transition: 600ms;
+}
+nav .menu ul li a:hover{
+    padding:10px;
+    background-color: rgba(255, 255, 255, 255);
+    color: #000000;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 900;
+}
+/*make it resposive by inspect..founded that <320px */
+@media(max-width:1000px){
+
+    nav .menu ul {
+        position: fixed;
+        top:80px;
+        left: 0px;
+        background: gold;
+        height:100vh;
+        width: 20vh;
+        display: block;
+        text-align: center;
+        
+    }
+    nav .menu ul li {
+             margin:25px 0 ;
+             
+
+    }
+    nav .menu ul li a{
+        font-size: 15px;
+        text-decoration: none;
+    }
+    nav .menu ul li a:hover{
+        padding:10px;
+        background-color: beige;
+        
+        outline: none;
+        border-radius: 5px;
+        font-weight: 900;
+    }
+    nav .date{
+        
+        color: rgb(255, 0, 0);
+        
+        
+    }
+    nav .datetime{
+      
+        color: rgb(0, 0, 0);
+        
+        
+    
+         
+    }
+ 
+    
+p2 .ex2{
+    text-indent: 50px;
+    margin-left: 160px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p1 .ex1{
+    margin-left: 170px;
+    
+    font-family: 'Times New Roman', Times, serif; 
+    
+}
+}
